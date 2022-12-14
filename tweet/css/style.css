@@ -1,0 +1,87 @@
+:root {
+    --headerSize: 60px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.mainBox {
+    width: 40%;
+    padding: 1%;
+    margin: 10% auto;
+    border: 1px solid black;
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+
+.imgFollow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+.nameImg {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.name {
+    padding: 10px;
+    color: rgb(54, 54, 54);
+    font-weight: bold;
+
+}
+
+.nameImg img,
+.imgFollow button {
+    width: var(--headerSize);
+    height: var(--headerSize);
+    object-fit: cover;
+    border-radius: 6%;
+}
+.imgFollow button {
+    border: none;
+    font-size: 16px;
+    color: rgb(85, 84, 84);
+}
+
+.postBox {
+    margin: 25px 0;
+    color: rgb(58, 57, 57);
+    font-size: 20px;
+    height: 100%;
+
+}
+
+.quote {
+    margin-bottom: 10px;
+}
+
+.toolsBox,
+.leftTool,
+.rightTool {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.toolsBox {
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3px double grey;
+    padding: 15px 5px;
+    height: 100%;
+}
+
+.leftTool p {
+    margin-right: 10px;
+}
+
+.rightTool p:not(#like){
+margin-right: 15px;
+}
